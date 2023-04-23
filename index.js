@@ -1,9 +1,21 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let toArr = word.split("")
+  let flip = toArr.reverse()
+  let joined = flip.join("")
+  if (word === joined) {
+    return true
+  } else {
+    return false
+  }
 }
 
 /* 
   Add your pseudocode here
+  split the string of words into an array of letters
+  reverse the array
+  join the array into string
+  test strict equality between input and output
 */
 
 /*
